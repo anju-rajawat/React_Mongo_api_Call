@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="txt" id="first" onclick="h()">
+    <br><br>
+    <input type="txt" id="second" onclick="h()" >
+    <br><br>
+    <small id="third" >reslt</small>
+    
+  
+    <script>
+       function h(){
+        let a=document.getElementById("first").value*1;
+        let b=document.getElementById("second").value*1;
+        //document.write(b)
+       // let c=document.getElementById("third").value;
+        c=a+b;
+        document.getElementById("third").innerHTML="result = "+c;
+      
+    }
+    h();
+          </script>
+</body>
+</html>
